@@ -1,4 +1,3 @@
-
-cd cliker-game
+just
 npm start
 ```
