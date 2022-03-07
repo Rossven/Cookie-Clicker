@@ -64,7 +64,7 @@ class Game {
     if (
       this.isAutoBuyerActive &&
       this.material <
-      this.errandBoy * 100 + this.master * 1500 + this.foreman * 600 &&
+      this.autoGenerators.errandBoy * 100 + this.autoGenerators.master * 1500 + this.autoGenerators.foreman * 600 &&
       this.canBuyMaterial()
     ) {
       this.buyMaterial();
