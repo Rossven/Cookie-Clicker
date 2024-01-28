@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import Game from "./game";
+import Cookie from "./assets/images/cookie.png";
 
 class App extends React.Component {
   
@@ -28,14 +29,26 @@ class App extends React.Component {
 
         <div style={{ marginBottom: "20px" }}>
           Toplam Kurabiye: {this.game.manufacturedKurabiye} <br />
-          <button
+          
+          <img
+            src={Cookie}
+            onClick={() => this.game.makeKurabiye()}
+            disabled={!this.game.canMakeKurabiye()}
+            height={"100px"}
+            width={"100px"}
+            className="cookie-button"
+            draggable={false}
+            alt="cookie"
+          >
+          </img>
+          {/* <button
             className="button-yogur"
             style={{ marginTop: "10px" }}
             disabled={!this.game.canMakeKurabiye()}
             onClick={() => this.game.makeKurabiye()}
           >
             Kurabiye Pisir!
-          </button>
+          </button> */}
         </div>
         <div>
           <div>İşletme</div>

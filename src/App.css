@@ -1,8 +1,10 @@
 .App {
-  background-color: #282c34;
+  background-color: #222222;
   color: white;
   padding: 24px;
   min-height: 100vh;
+  touch-action: manipulation;
+
 }
 
 .App-header {
@@ -31,4 +33,15 @@
   background-color: rgb(112, 68, 32);  
   border-radius: 50px;
 
+}
+
+.cookie-button {
+  margin-top: 10px;
+  transition: .3s;
+  cursor: pointer;
+  user-select: none;
+}
+
+.cookie-button:active {
+  transform: scale(.90);
 }

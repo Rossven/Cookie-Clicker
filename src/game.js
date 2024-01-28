@@ -1,10 +1,10 @@
 class Game {
   demandRate = 0;
   material = 2000;
-  money = 1000;
+  money = 100000000;
   price = 10;
   currentKurabiye = 0;
-  manufacturedKurabiye = 0;
+  manufacturedKurabiye = 50000;
   soldKurabiye = 0;
   unitMaterialCost = 100;
 
